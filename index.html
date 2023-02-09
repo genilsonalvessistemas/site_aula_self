@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
+
+    <title>Treinamento CSS 3 e HTML 5</title>
+    <style>
+      /* unicas tags varias que renderizam conteudos são o hr e br */
+      /* margim: cima direita baixo esquerda */
+      /* x x x x */
+      /* Movimento de transição do html, movimento tableless, e html 5 */
+      /* html 5 criação do 'div' */
+      * {
+        /* font-family: Arial, Helvetica, sans-serif; */
+        @import url("https://fonts.cdnfonts.com/css/roboto");
+        font-family: "Josefin Sans", sans-serif;
+
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        background: rgb(67, 121, 150);
+        /* min-height: 100vh;
+        background: -moz-linear-gradient(top, rgba(254, 252, 234, 1) 0%, rgba(241, 218, 54, 1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(254, 252, 234, 1)), color-stop(100%, rgba(241, 218, 54, 1)));
+        background: -webkit-linear-gradient(top, rgba(254, 252, 234, 1) 0%, rgba(241, 218, 54, 1) 100%);
+        background: -o-linear-gradient(top, rgba(254, 252, 234, 1) 0%, rgba(241, 218, 54, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(254, 252, 234, 1) 0%, rgba(241, 218, 54, 1) 100%);
+        background: linear-gradient(to bottom, rgba(254, 252, 234, 1) 0%, rgba(241, 218, 54, 1) 100%); */
+        /* height: 100%; */
+      }
+      /* .container { */
+      /* margin: auto; */
+      /* border: solid; */
+      /* border: dashed red; */
+      /* border: 1rem solid; */
+      /* border: thick double #32a1ce; */
+      /* width: 900px; */
+      /* } */
+      /* .bloco { */
+      /* height: 300px; */
+      /* width: 200px; */
+      /* border: 1px solid black; */
+      /* float: left; */
+      /* float: left; */
+      /* margin: auto; */
+      /* margin: 10px; */
+      /* } */
+
+      /* aula 08 02 2023 */
+      #main {
+        border: 1px solid red;
+        width: 100%;
+        max-width: 1000px;
+        min-width: 700px;
+        /* overflow: hidden; */
+        margin: 5px auto;
+      }
+      #header {
+        background-color: aquamarine;
+        height: 50%;
+        width: 100%;
+        /* min-height: 300px; */
+        /* max-height: 450px; */
+        /* height: 150px; */
+      }
+      #nav {
+        background-color: rgb(123, 224, 191);
+        height: 50%;
+        width: 1500px;
+        /* min-height: 300px; */
+        /* max-height: 450px; */
+        /* height: 150px; */
+      }
+      #conteudo {
+        background-color: rgb(57, 198, 198);
+        height: 50%;
+        /* height: 150px; */
+        /* min-height: 300px; */
+        /* max-height: 450px; */
+      }
+      #footer {
+        background-color: rgb(21, 181, 199);
+        height: 50%;
+        /* height: 150px; */
+        /* min-height: 300px;
+              max-height: 450px; */
+      }
+      h1 {
+        font-size: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Titulo</h1> -->
+    <!-- Criação de conteudos  -->
+    <!-- <div class="container">
+      <div class="bloco">Bloco 1</div>
+      <div class="bloco">Bloco 2</div>
+      <div class="bloco">Bloco 2</div>
+      <div class="bloco">Bloco 2</div>
+      <div class="bloco">Bloco 2</div>
+      <div class="bloco">Bloco 2</div>
+      <div class="bloco">Bloco 2</div>
+    </div> -->
+
+    <div id="main">
+      <div id="header">Header Com lOGO</div>
+      <div id="nav">Nav</div>
+      <div id="conteudo">Conteudo</div>
+      <div id="footer">Footer</div>
+    </div>
+  </body>
+</html>
